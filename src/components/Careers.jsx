@@ -69,6 +69,7 @@ const Careers = () => {
             ))}
         </div>
       </div>
+      </div>
     </section>
   );
 };
