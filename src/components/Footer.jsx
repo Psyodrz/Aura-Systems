@@ -17,11 +17,11 @@ const Footer = () => {
   return (
     <>
       <footer style={{ borderTop: '1px solid var(--color-border)', padding: '6rem 0 2rem', marginTop: '4rem', backgroundColor: 'var(--color-bg-primary)' }}>
-        <div className="container" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '4rem', marginBottom: '4rem' }}>
+        <div className="container footer-content" style={{ marginBottom: '4rem' }}>
           
           {/* Column 1: Brand */}
           <div>
-            <div className="logo" style={{ height: '30px', marginBottom: '1.5rem', display: 'flex', alignItems: 'center' }}>
+            <div className="logo" style={{ height: '30px', marginBottom: '1.5rem', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                  <img src={logo} alt="Aura Systems" style={{ height: '100%', width: 'auto' }} />
             </div>
             <p style={{ fontSize: '0.9rem', color: 'var(--color-text-secondary)', lineHeight: 1.6, maxWidth: '280px' }}>

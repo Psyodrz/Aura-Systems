@@ -195,6 +195,24 @@ html, body {
   text-align: center;
 }
 
+/* Base (Mobile) for Footer */
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  text-align: center;
+}
+
+.footer-content p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-content ul {
+  padding-left: 0;
+  align-items: center;
+}
+
 /* Base (Mobile) for Process Header and Steps */
 .process-header {
   display: flex;
@@ -264,6 +282,75 @@ html, body {
      margin-top: 0;
   }
   
+  /* Careers: Desktop Layout */
+  .careers-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    text-align: left;
+  }
+
+  .careers-intro-block {
+    text-align: left;
+  }
+
+  .careers-description {
+    text-align: left;
+    order: 0; /* Restore natural order */
+    margin-bottom: 0;
+    max-width: 400px;
+    margin-top: 0;
+  }
+  
+  .careers-listings {
+    /* No specific order needed, follows natural flow / moved via HTML structure? 
+       Wait, I flattened it. 
+       Actually, on Desktop we want:
+       [Title Block] ... [Description]
+       [Listings (full width)]
+       
+       My CSS reset above for desktop flex-direction row puts them all in a line. 
+       Title | Description | Listings.
+       That's not what we want. We want Title & Description on top, Listings below.
+       
+       Correction: The original design was a header row (Title + Desc) THEN Listings.
+       My new HTML flat structure is:
+       1. Title Block
+       2. Description
+       3. Listings
+       
+       On Desktop, I can use display: grid to place them.
+    */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    align-items: end;
+  }
+  
+  .careers-intro-block {
+    grid-column: 1;
+    grid-row: 1;
+    text-align: left;
+  }
+  
+  .careers-description {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: left;
+    order: unset;
+    margin-bottom: 0;
+    justify-self: end;
+    max-width: 400px;
+  }
+  
+  .careers-listings {
+    grid-column: 1 / -1; /* Span full width */
+    grid-row: 2;
+    margin-top: 4rem;
+    order: unset;
+  }
+
+
   /* Contact: Grid Layout */
   .contact-container {
     display: grid;
@@ -271,6 +358,15 @@ html, body {
     gap: 4rem;
     text-align: left;
   }
+  
+  /* Footer: Grid Layout */
+  .footer-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4rem;
+    text-align: left;
+  }
+
 
   /* Services: Alternating Layout */
   .service-card {
