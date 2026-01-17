@@ -309,7 +309,7 @@ html, body {
   /* Contact: Grid Layout */
   .contact-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr !important;
     gap: 4rem;
     text-align: left;
   }
