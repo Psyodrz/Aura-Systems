@@ -41,7 +41,7 @@ const Footer = () => {
                   <strong>Phone:</strong> +91 7518881824
               </address>
                <div style={{ marginTop: '1.5rem', fontSize: '0.9rem' }}>
-                   <a href="mailto:aurasystems1824@gmail.com" style={{ textDecoration: 'underline' }}>aurasystems1824@gmail.com</a>
+                   <a href="mailto:Contact@aurasystems.co.in" style={{ textDecoration: 'underline' }}>Contact@aurasystems.co.in</a>
                </div>
           </div>
 
