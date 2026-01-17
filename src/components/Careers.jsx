@@ -22,7 +22,7 @@ const Careers = () => {
   return (
     <section id="careers" className="section" style={{ backgroundColor: '#111', color: '#fff', padding: '6rem 0' }}>
       <div className="container">
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: '4rem' }}>
+        <div className="careers-header">
             <div>
                 <span style={{ color: 'var(--color-accent)', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', fontSize: '0.9rem' }}>Careers</span>
                 <h2 style={{ fontSize: '3rem', marginTop: '1rem', lineHeight: 1.1 }}>Join The Vanguard.</h2>

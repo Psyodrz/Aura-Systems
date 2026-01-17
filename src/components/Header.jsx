@@ -34,18 +34,15 @@ const Header = () => {
           pointerEvents: 'none'
       }}></div>
 
-      <div className="container" style={{ 
+      <div className="container header-inner" style={{ 
           position: 'relative', 
           zIndex: 2, 
-          display: 'flex', 
-          justifyContent: 'space-between', 
-          alignItems: 'center',
-          padding: '1.5rem 1rem'
+          // Removed inline flex definitions to let CSS handle it
       }}>
         <div className="logo" style={{ height: '40px', display: 'flex', alignItems: 'center' }}>
             <img src={logo} alt="Aura Systems" style={{ height: '100%', width: 'auto', display: 'block' }} />
         </div>
-        <nav style={{ display: 'flex', gap: '2rem', alignItems: 'center' }}>
+        <nav className="header-nav">
             {['About', 'Services', 'Projects', 'Clients'].map((item) => (
                 <a 
                     key={item}

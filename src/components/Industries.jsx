@@ -23,10 +23,10 @@ const Industries = () => {
   return (
     <section className="industries section" style={{ backgroundColor: 'var(--color-bg-secondary)', padding: '6rem 0' }}>
       <div className="container">
-        <h2 style={{ fontSize: '2.5rem', marginBottom: '4rem', paddingBottom: '1rem', borderBottom: '1px solid #D1D1D1' }}>Sectors Served</h2>
+        <h2 className="section-header">Sectors Served</h2>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem' }}>
           {sectors.map((sector, i) => (
-            <div key={i} style={{ padding: '2rem', border: '1px solid #D1D1D1', backgroundColor: 'var(--color-bg-primary)' }}>
+            <div key={i} className="content-card" style={{ padding: '2rem', border: '1px solid #D1D1D1', backgroundColor: 'var(--color-bg-primary)' }}>
               <h3 style={{ fontSize: '1.25rem', marginBottom: '1.5rem', fontWeight: 700 }}>{sector.name}</h3>
               <ul style={{ listStyle: 'none', padding: 0 }}>
                   {sector.subs.map((sub, j) => (

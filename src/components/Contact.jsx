@@ -29,9 +29,9 @@ const Contact = () => {
 
   return (
     <section id="contact" className="contact container section">
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem' }}>
+      <div className="contact-container">
         <div>
-          <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Initiate Consultation</h2>
+          <h2 className="section-header" style={{ fontSize: '2rem', borderBottom: 'none' }}>Initiate Consultation</h2>
           <p style={{ color: 'var(--color-text-secondary)', marginBottom: '2rem' }}>
             Strict confidentiality is maintained for all inquiries.
           </p>

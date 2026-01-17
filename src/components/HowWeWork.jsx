@@ -36,8 +36,8 @@ const steps = [
 const HowWeWork = () => {
   return (
     <section id="process" className="process container section">
-       <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '4rem', marginBottom: '4rem' }}>
-           <h2 style={{ fontSize: '2.5rem', borderLeft: '4px solid var(--color-accent)', paddingLeft: '2rem' }}>Operational<br />Methodology</h2>
+       <div className="process-header">
+           <h2 className="process-title">Operational<br />Methodology</h2>
            <p style={{ fontSize: '1.125rem', color: 'var(--color-text-secondary)', lineHeight: 1.6 }}>
                We do not believe in 'one-size-fits-all'. Our methodology is born from decades of field experience in hostile and high-compliance environments. We follow a rigid military-grade doctrine of assessment, design, and execution.
            </p>
@@ -45,15 +45,8 @@ const HowWeWork = () => {
        
        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '3rem' }}>
          {steps.map((s, i) => (
-           <div key={i} style={{ position: 'relative', paddingRight: '1rem' }}>
-             <span style={{ 
-                 display: 'block', 
-                 fontSize: '3rem', 
-                 color: 'var(--color-accent)', 
-                 fontWeight: 800, 
-                 marginBottom: '1rem',
-                 opacity: 1
-             }}>{s.step}</span>
+           <div key={i} className="process-step">
+             <span className="process-step-number">{s.step}</span>
              <h3 style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '1rem' }}>{s.title}</h3>
              <p style={{ fontSize: '0.95rem', color: 'var(--color-text-secondary)', lineHeight: 1.6 }}>{s.desc}</p>
            </div>

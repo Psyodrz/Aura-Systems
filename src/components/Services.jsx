@@ -114,19 +114,14 @@ const Services = () => {
   return (
     <section id="services" className="services section" style={{ padding: '0' }}>
         <div className="container">
-             <h2 style={{ fontSize: '2.5rem', marginBottom: '4rem', paddingBottom: '1rem', borderBottom: '1px solid var(--color-border)' }}>Core Capabilities</h2>
+             <h2 className="section-header">Core Capabilities</h2>
         </div>
         
         <div style={{ display: 'flex', flexDirection: 'column' }}>
           {services.map((s, i) => (
-            <div key={i} style={{ 
-                display: 'flex', 
-                flexDirection: i % 2 === 0 ? 'row' : 'row-reverse',
-                backgroundColor: 'var(--color-bg-primary)',
-                minHeight: '600px'
-            }}>
+            <div key={i} className="service-card">
               {/* Image Side */}
-              <div style={{ flex: 1, position: 'relative', overflow: 'hidden' }}>
+              <div className="service-card-image">
                   <div style={{
                       position: 'absolute',
                       top: 0, left: 0, width: '100%', height: '100%',
@@ -138,7 +133,7 @@ const Services = () => {
               </div>
 
               {/* Content Side */}
-              <div style={{ flex: 1, padding: '4rem 6rem', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+              <div className="service-card-content">
                   <h3 style={{ fontSize: '2rem', marginBottom: '1.5rem' }}>{s.title}</h3>
                   <p style={{ 
                       fontSize: '1.125rem', 

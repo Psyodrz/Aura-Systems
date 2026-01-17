@@ -26,13 +26,13 @@ const Projects = () => {
   return (
     <section id="projects" className="section" style={{ backgroundColor: 'var(--color-bg-primary)' }}>
       <div className="container">
-         <h2 style={{ fontSize: '2.5rem', marginBottom: '3rem', borderBottom: '1px solid var(--color-border)', paddingBottom: '1rem' }}>
+         <h2 className="section-header">
              Selected Projects
          </h2>
          
          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '2rem' }}>
              {projects.map((p, i) => (
-                 <div key={i} style={{ 
+                 <div key={i} className="content-card" style={{ 
                      backgroundColor: 'var(--color-bg-primary)', 
                      padding: '2rem', 
                      border: '1px solid var(--color-border)',

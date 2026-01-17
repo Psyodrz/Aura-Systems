@@ -41,8 +41,7 @@ const Hero = () => {
              }}>
                  Defence-Grade Infrastructure
              </span>
-             <h1 style={{ 
-                 fontSize: 'clamp(3.5rem, 6vw, 5.5rem)', 
+             <h1 className="hero-title" style={{ 
                  fontWeight: 800, 
                  lineHeight: 1.05, 
                  marginBottom: '2rem',
@@ -61,28 +60,34 @@ const Hero = () => {
              }}>
                 Aura Systems delivers end-to-end surveillance, perimeter control, and critical infrastructure protection for government, defence, and industrial sectors.
              </p>
-             <div style={{ display: 'flex', gap: '1rem' }}>
+             <div className="hero-actions">
                  <a href="#contact" style={{ 
-                    display: 'inline-block', 
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center', 
                     backgroundColor: 'var(--color-text-primary)', 
                     color: 'var(--color-bg-primary)', 
                     padding: '1.25rem 2.5rem', 
                     fontWeight: 600,
                     fontSize: '1.1rem',
                     letterSpacing: '0.02em',
-                    border: '1px solid var(--color-text-primary)'
+                    border: '1px solid var(--color-text-primary)',
+                    textAlign: 'center'
                  }}>
                     Request Consultation
                  </a>
                  <a href="#services" style={{ 
-                    display: 'inline-block', 
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center', 
                     backgroundColor: 'transparent', 
                     color: 'var(--color-text-primary)', 
                     padding: '1.25rem 2.5rem', 
                     fontWeight: 600,
                     fontSize: '1.1rem',
                     letterSpacing: '0.02em',
-                    border: '1px solid var(--color-text-primary)'
+                    border: '1px solid var(--color-text-primary)',
+                    textAlign: 'center'
                  }}>
                     View Capabilities
                  </a>

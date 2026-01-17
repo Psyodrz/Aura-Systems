@@ -4,7 +4,7 @@ const AboutUs = () => {
   return (
     <section id="about" className="section" style={{ backgroundColor: 'var(--color-bg-primary)' }}>
       <div className="container">
-        <div style={{ maxWidth: '900px' }}>
+        <div className="section-intro">
           <span style={{ 
              display: 'inline-block', 
              marginBottom: '1rem', 
@@ -24,16 +24,16 @@ const AboutUs = () => {
              Aura Systems was founded on a singular doctrine: <strong>Security is non-negotiable.</strong> We are not just integrators; we are strategic partners in defence. From securing naval dockyards to hardening petrochemical refineries, our mission is to deliver failure-proof infrastructure that stands when everything else falls.
           </p>
           
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem' }}>
-             <div>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem', marginTop: '3rem' }}>
+             <div className="content-card">
                 <h4 style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>12+ Years</h4>
                 <p style={{ fontSize: '0.9rem', color: 'var(--color-text-secondary)' }}>Operational Excellence in High-Risk Zones</p>
              </div>
-             <div>
+             <div className="content-card">
                 <h4 style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>Zero Breaches</h4>
                 <p style={{ fontSize: '0.9rem', color: 'var(--color-text-secondary)' }}>Across all Aura-protected perimeters</p>
              </div>
-             <div>
+             <div className="content-card">
                  <h4 style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>ISO 27001</h4>
                  <p style={{ fontSize: '0.9rem', color: 'var(--color-text-secondary)' }}>Certified Information Security Standards</p>
              </div>
