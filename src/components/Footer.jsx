@@ -31,7 +31,7 @@ const Footer = () => {
 
           {/* Column 2: Address/Contact */}
           <div>
-              <h4 style={{ fontSize: '0.8rem', textTransform: 'uppercase', marginBottom: '1.5rem', letterSpacing: '0.05em', fontWeight: 600 }}>Headquarters</h4>
+              <h4 className="footer-heading">Headquarters</h4>
               <address style={{ fontStyle: 'normal', fontSize: '0.9rem', color: 'var(--color-text-secondary)', lineHeight: 1.6 }}>
                   526/4B/2 Rajapur Unchwagari<br />
                   Stanily Road<br />
@@ -47,7 +47,7 @@ const Footer = () => {
 
           {/* Column 3: Quick Links */}
           <div>
-            <h4 style={{ fontSize: '0.8rem', textTransform: 'uppercase', marginBottom: '1.5rem', letterSpacing: '0.05em', fontWeight: 600 }}>Company</h4>
+            <h4 className="footer-heading">Company</h4>
             <ul style={{ fontSize: '0.9rem', color: 'var(--color-text-secondary)', display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
               <li><a href="#services">Capabilities</a></li>
               <li><a href="#process">Operations</a></li>
@@ -58,7 +58,7 @@ const Footer = () => {
 
            {/* Column 4: Compliance */}
            <div>
-              <h4 style={{ fontSize: '0.8rem', textTransform: 'uppercase', marginBottom: '1.5rem', letterSpacing: '0.05em', fontWeight: 600 }}>Compliance</h4>
+              <h4 className="footer-heading">Compliance</h4>
               <ul style={{ fontSize: '0.9rem', color: 'var(--color-text-secondary)', display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
                 <li>ISO 27001 Certified</li>
                 <li>BIS Compliant Hardware</li>

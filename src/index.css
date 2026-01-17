@@ -213,6 +213,25 @@ html, body {
   align-items: center;
 }
 
+/* About Grid (Mobile) */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+/* Footer Heading (Mobile) */
+.footer-heading {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
 /* Base (Mobile) for Process Header and Steps */
 .process-header {
   display: flex;
@@ -412,5 +431,18 @@ html, body {
   .header-nav {
     justify-content: flex-end;
     gap: 2rem;
+  }
+  
+  /* About Grid (Desktop 3-column) */
+  .about-grid {
+    grid-template-columns: repeat(3, 1fr);
+    text-align: left;
+  }
+  
+  /* Footer Heading (Desktop: Match Logo Height) */
+  .footer-heading {
+    height: 30px; /* Match logo height */
+    display: flex;
+    align-items: center; /* Center vertically in the 30px space */
   }
 }
