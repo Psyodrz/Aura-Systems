@@ -370,9 +370,12 @@ html, body {
 
   .service-card-image {
     height: auto;
+    flex: 1; /* Restore flex behavior for side-by-side */
+    width: auto; /* Reset fixed width */
   }
 
   .service-card-content {
+    flex: 1; /* Ensure equal width */
     padding: 4rem 6rem;
   }
   
