@@ -446,4 +446,9 @@ html, body {
     display: flex;
     align-items: center; /* Center vertically in the 30px space */
   }
+
+  /* Footer Links (Desktop: Left Align) */
+  .footer-content ul {
+    align-items: flex-start;
+  }
 }
