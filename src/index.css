@@ -274,6 +274,7 @@ html, body {
     text-align: left;
     margin-left: 0;
     margin-right: 0;
+    max-width: 100%; /* Fill the container */
   }
 
   /* Global: Left Align Content Cards */
