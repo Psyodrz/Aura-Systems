@@ -364,7 +364,7 @@ html, body {
     min-height: 600px;
   }
   
-  .service-card:nth-child(odd) {
+  .service-card:nth-child(even) {
     flex-direction: row-reverse;
   }
 
